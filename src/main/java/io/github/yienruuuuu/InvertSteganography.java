@@ -125,7 +125,7 @@ public class InvertSteganography {
                     int drawY = bestY + (regionHeight - textHeight) / 2 + fm.getAscent();
 
                     // (d) 設定透明度
-                    float alphaValue = 0.03f; // 5% (你也可改成 0.04f = 4%)
+                    float alphaValue = 0.02f; // 5% (你也可改成 0.04f = 4%)
                     gHidden.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, alphaValue));
                     gHidden.setColor(Color.BLACK);
                     gHidden.drawString(message, drawX, drawY);
